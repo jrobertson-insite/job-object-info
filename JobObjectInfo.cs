@@ -52,7 +52,7 @@ namespace JobObjectInfo
         /// <param name="logInterval">Interval (in minutes) between logging memory statistics.</param>
         /// <param name="memoryThreshold">Memory usage change required between logging memory statistics.</param>
         /// <param name="logFilePath">Path to log memory statistics.</param>
-        static void Main(int logInterval = 5, int memoryThreshold = 50, string logFilePath = @"c:\temp\memoryusage.log")
+        static void Main(int logInterval = 5, int memoryThreshold = 50, string logFilePath = @"c:\inetpub\wwwroot\App_Log\memoryusage.log")
         {
             var limitInfoJobObjectLength = Marshal.SizeOf(typeof(JobObjectExtendedLimitInformation));
             var limitInfoJobObject = Marshal.AllocHGlobal(limitInfoJobObjectLength);
